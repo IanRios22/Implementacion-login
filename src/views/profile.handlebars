@@ -1,0 +1,18 @@
+<div class="container my-5">
+
+    <form action="/logout" method="POST">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title display-4">Perfil</h1>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Nombre: {{user.first_name}}</li>
+                    <li class="list-group-item">Apellido: {{user.last_name}}</li>
+                    <li class="list-group-item">Correo Electrónico: {{user.email}}</li>
+                    <li class="list-group-item">Edad: {{user.age}}</li>
+                </ul>
+
+            </div>
+        </div>
+        <button type="submit">Cerrar Sesión</button>
+    </form>
+</div>
